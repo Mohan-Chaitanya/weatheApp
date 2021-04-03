@@ -1,0 +1,81 @@
+body {
+  margin: 2rem;
+  background: rgb(245, 182, 245);
+}
+
+#getData,
+h3 {
+  text-align: right;
+}
+
+input {
+  height: 25px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+#dataDiv {
+  display: flex;
+  margin-left: 1rem;
+}
+
+#tempDiv {
+  margin: 1rem;
+  box-sizing: border-box;
+  width: 20%;
+  border-left: 2px solid black;
+  padding-left: 1rem;
+}
+
+#details {
+  position: relative;
+  margin: 4rem;
+  box-sizing: border-box;
+  width: 10%;
+  border-top: 2px solid black;
+}
+
+#container > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 400%;
+}
+
+h5 {
+  font-size: 120%;
+}
+
+.pngImg {
+  display: flex;
+}
+
+#toggelBtn {
+  font-size: larger;
+}
+
+.min-max {
+  display: table-cell;
+}
+
+label {
+  display: flex;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 3px;
+}
+label > h5 {
+  margin: 0 auto;
+  padding-left: 2px;
+}
