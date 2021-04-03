@@ -1,5 +1,5 @@
 function weatherData(searchCity) {
-    fetch('http://api.openweathermap.org/data/2.5/weather?appid=f0cf0e05c6a083652abc652573878297&q=' + `${searchCity}`, { mode: 'cors' })
+    fetch('https://api.openweathermap.org/data/2.5/weather?appid=f0cf0e05c6a083652abc652573878297&q=' + `${searchCity}`, { mode: 'cors' })
         .then(function (response) {
             return response.json();
 
@@ -12,7 +12,7 @@ function weatherData(searchCity) {
             maxTemp.innerHTML = (response.main.temp_max - 273.15).toFixed(2);
             cloudInfo.innerHTML = response.weather[0].main;
             let Cloudicon = response.weather[0].icon
-            cloudImage.src = 'http://openweathermap.org/img/wn/' + `${Cloudicon}` + '.png';
+            cloudImage.src = 'https://openweathermap.org/img/wn/' + `${Cloudicon}` + '.png';
             container.style.display = 'block';
         })
         .catch(function () {
